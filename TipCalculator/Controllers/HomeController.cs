@@ -5,14 +5,15 @@ namespace TipCalculator.Controllers
 {
     public class HomeController : Controller
     {
-
         [HttpGet]
         public IActionResult Index()
         {
             ViewBag.Fifteen = 0;
             ViewBag.Twenty = 0;
-            Viewbag.TwentyFive = 0;
-            View();
+            ViewBag.TwentyFive = 0;
+            ViewBag.Title = "Tip Calculator";
+
+            return View();
         }
 
         [HttpPost]
